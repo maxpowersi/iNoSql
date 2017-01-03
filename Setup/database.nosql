@@ -1,0 +1,10 @@
+use nosqli
+
+db.users.insert({name:"Jhon doe", username:"admin", email:"admin@dtt.com"})
+db.users.insert({name:"Mr Robot", username:"singleuser", email:"singleuser@dtt.com"})
+
+db.orders.insert({id:"122", name:"Mr Robot", item:"tablet", quantity:"1"})
+db.orders.insert({id:"1337", name:"Jhon doe", item:"gun", quantity:"60"})
+
+db.paymentinfo.insert({id:"1", name:"Jhon doe", cc:"4045 4545 2322 3243", cvv2:"345"})
+db.paymentinfo.insert({id:"2", name:"Mr Robot", cc:"2222 2222 2222 2222", cvv2:"222"})
