@@ -1,6 +1,6 @@
 iNoSql v1.0 
 
-This is a vulnerable nosql injection site . It was created to learn and train on NoSQL injections.<br />
+This is a vulnerable nosql injection site . It was created to learn and train about NoSQL injections.<br />
 
 Setup process: <br />
 
