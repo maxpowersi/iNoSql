@@ -16,6 +16,8 @@
 				<li>user'; return this.id > 1; }//</li>
 				<li>?acctid[$ne]=999</li>
 				<li>user'; while(1); }//</li>
+				<li>{$gt: ""}</li>
+				<li>{"$ne": null}</li>
 			</p>
 		</div>
     </div>

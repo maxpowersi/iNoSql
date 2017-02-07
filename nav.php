@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">iNoSql v1.0</a>
+        <a class="navbar-brand" href="#">iNoSql v1.6</a>
     </div>
 
     <div id="navbar" class="collapse navbar-collapse">
@@ -21,6 +21,7 @@
             <li><a href="cust.php">Prueba 3 - Información de cliente</a></li>
             <li><a href="orderdata_dos.php">Prueba 4 - Búsqueda de órdenes</a></li>
             <li><a href="ajax1.php">Prueba 5 - Información de cliente</a></li>
+			<li><a href="login.php">Prueba 6 - Login JSON</a></li>
             <li><a href="anexo_payloads.php">Anexo - Payloads</a></li>
             </ul>
         </li>

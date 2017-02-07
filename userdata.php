@@ -26,7 +26,6 @@
 					$collection = $db->users;
 					$search = $_POST['usersearch'];
 					$cursor = $collection->find(array('$where' => "function () { return this.username == '$search' ;}"));
-					//$cursor = $collection->find(array('username' => (string)$search));
 					
 					echo $cursor->count() . ' user found. <br/> <br/>';
 

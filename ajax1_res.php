@@ -10,7 +10,7 @@
 			<h1>Prueba 5 - Información de cliente - Explicación </h1>
 		</div>
 		<div>
-			<p class="lead">Este caso es similar al caso 3, con la diferencia, de que no envia por GET sino que hace un request ajax. Es muy común que un sitio que trabaja con base de datos NoSql use ajax. Si observamos el código javascript vemos que llama a una URL por GET y le pasa por parametro el valor ingresado en el input.</p>
+			<p class="lead">Este caso es similar al caso 3, con la diferencia, de que no envia por GET sino que hace un request ajax. Es muy común que un sitio que trabaja con base de datos No Sql use ajax. Si observamos el código javascript vemos que llama a una URL por GET y le pasa por parametro el valor ingresado en el input.</p>
 		</div>
     </div>
 

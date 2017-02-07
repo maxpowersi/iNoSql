@@ -26,8 +26,10 @@ Setup process: <br />
         sudo service apache2 restart<br />
 4. Start mongodb <br />
     For windows<br />
+		Create the folder "C:\data\db"
         Run mongodb-start.bat <br />
     For linux<br />
         execute: service mongodb start<br />
 5. Run database.nosql in mongodb to create (running mongo command).<br />
+	For windows, use the script mong-getshell.bat, to get a mongo shell.<br />
 6. Copy the site into apache folder.<br />
