@@ -2,6 +2,8 @@ iNoSql v1.0
 
 This is a vulnerable nosql injection site . It was created to learn and train about NoSQL injections.<br />
 
+Trello: https://trello.com/b/QPoYwC6w/inosql
+
 Setup process: <br />
 
 1. Install mongodb<br />
