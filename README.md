@@ -1,37 +1,37 @@
-iNoSql v1.0 
+iNoSql v1.7
 
-This is a vulnerable nosql injection site . It was created to learn and train about NoSQL injections.<br />
+iNoSQL es una aplicacion web vulnerable a inyecciones No SQL, con el fin de aprender acerca de estas vulnerabilidades.<br />
 
 Trello: https://trello.com/b/QPoYwC6w/inosql
 
-Setup process: <br />
+Instalación: <br />
 
-1. Install mongodb<br />
-    sudo apt-get install mongodb<br />
-2. Install apache and php<br />
-    For windows<br />
-        install XAMPP<br />
-    For linux<br />
+1. Instalar MongoDB<br />
+	Linux:<br />
+		sudo apt-get install mongodb<br />
+2. Instalar apache y PHP5<br />
+    Windows:<br />
+        instalar XAMPP<br />
+    Linux:<br />
         sudo apt-get install apache2<br />
         sudo apt-get install php7.0<br />
-3. Mongo Php Driver Connector<br />
-    For windows<br />
-        copy the file php_mongo.dll into php/ext<br />
-        edit the php.ini with extension=php_mongo.dll <br />
+3. Configurar el driver de conexión<br />
+    Windows:<br />
+        Copiar el archivo php_mongo.dll que se encuentra en la carpeta "setup", en el directorio php/ext<br />
+        Editar el archivo php.ini con extension=php_mongo.dll<br />
         restart apache<br />
-    For linux<br />
+    Linux<br />
         sudo apt-get install php5-dev<br />
         sudo apt-get install pecl<br />
         sudo apt-get install libcurl4-openssl-dev pkg-config libssl-dev libsslcommon2-dev<br />
         sudo pecl install mongo<br />
-        edit the php.ini with extension=mongo.so<br />
+        Editar el archivo php.ini con extension=mongo.so<br />
         sudo service apache2 restart<br />
-4. Start mongodb <br />
-    For windows<br />
-		Create the folder "C:\data\db"
-        Run mongodb-start.bat <br />
-    For linux<br />
-        execute: service mongodb start<br />
-5. Run database.nosql in mongodb to create (running mongo command).<br />
-	For windows, use the script mong-getshell.bat, to get a mongo shell.<br />
-6. Copy the site into apache folder.<br />
+4. Iniciar MongoDB<br />
+    Windows:<br />
+		Crear la carpeta "C:\data\db"
+        Ejecutar el script mongodb-start.bat que esta dentro de la carpeta "setup"<br />
+    Linux:<br />
+        service mongodb start<br />
+5. Copiar la carpeta web en el directorio de apache.<br />
+6. Iniciar la aplicacion, entrar a la opción del menu "Instalar", y ejecutar el boton "instalar".<br />
