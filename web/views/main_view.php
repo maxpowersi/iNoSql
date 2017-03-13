@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>iNoSql</title>
+	<link rel="icon" href="res\img\icon.png">
 	<link rel="stylesheet" type="text/css" href="res\bootstrap\css\bootstrap.css">
     <link rel="stylesheet" type="text/css" href="res\bootstrap\css\bootstrap-theme.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -28,16 +29,16 @@
 				<ul class="nav navbar-nav">
 				<li id="menu-index"><a href="index.php">Inicio</a></li>
 				<li id="menu-index"><a href="setup.php">Instalar</a></li>
+				<li id="menu-index"><a href="payloads.php">Listado de Payloads</a></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menú <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pruebas <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-					<li><a href="test1.php">Prueba 1 - Búsqueda de usuarios</a></li>
-					<li><a href="test2.php">Prueba 2 - Búsqueda de pedidos</a></li>
-					<li><a href="test3.php">Prueba 3 - Información de clientes</a></li>
-					<li><a href="test4.php">Prueba 4 - Búsqueda de pedidos</a></li>
-					<li><a href="test5.php">Prueba 5 - Información de clientes</a></li>
-					<li><a href="test6.php">Prueba 6 - Login JSON</a></li>
-					<li><a href="payloads.php">Anexo - Payloads</a></li>
+					<li><a href="test1.php">1 - Búsqueda de usuarios</a></li>
+					<li><a href="test2.php">2 - Búsqueda de pedidos</a></li>
+					<li><a href="test3.php">3 - Información de clientes</a></li>
+					<li><a href="test4.php">4 - Búsqueda de pedidos</a></li>
+					<li><a href="test5.php">5 - Información de clientes</a></li>
+					<li><a href="test6.php">6 - Login JSON</a></li>
 					</ul>
 				</li>
 				</ul>
