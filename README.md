@@ -33,6 +33,6 @@ Instalación: <br/>
     Linux:<br/>
         service mongodb start<br/>
         Para obtener una shell, ejectuar mongodb desde una termina.
-5. Copiar la carpeta web en el directorio de apache.<br/>
+5. Copiar la carpeta web en el directorio de apache, y configurar el virtual host, con pagina inicial "/home".<br/>
 6. Iniciar la aplicación, entrar a la opción del menu "Instalar", y ejecutar el boton "instalar".<br/>
 7. La aplicación esta lista para usarse.

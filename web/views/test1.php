@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="page-header" style="padding-top: 20px;">
 		<h1>Prueba 1 - Búsqueda de usuarios</h1>
-		<h4>Ingresa en el formulario el nombre de usuario a buscar, por ejemploe admin. <a href="test1_res.php" target="_blank">Respuesta</a></h4>
+		<h4>Ingresa en el formulario el nombre de usuario a buscar, por ejemploe admin. <a href="test1_res" target="_blank">Respuesta</a></h4>
 	</div>
 	<div>    	       
 		<form method="post" id="usersearch">

@@ -23,22 +23,22 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">iNoSql <?php echo $Version ?></a>
+				<a class="navbar-brand" href="#">iNoSql <?php echo $Version; ?></a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-				<li id="menu-index"><a href="index.php">Inicio</a></li>
-				<li id="menu-index"><a href="setup.php">Instalar</a></li>
-				<li id="menu-index"><a href="payloads.php">Listado de Payloads</a></li>
+				<li id="menu-index"><a href="home">Inicio</a></li>
+				<li id="menu-index"><a href="setup">Instalar</a></li>
+				<li id="menu-index"><a href="payloads">Listado de Payloads</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pruebas <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-					<li><a href="test1.php">1 - Búsqueda de usuarios</a></li>
-					<li><a href="test2.php">2 - Búsqueda de pedidos</a></li>
-					<li><a href="test3.php">3 - Información de clientes</a></li>
-					<li><a href="test4.php">4 - Búsqueda de pedidos</a></li>
-					<li><a href="test5.php">5 - Información de clientes</a></li>
-					<li><a href="test6.php">6 - Login JSON</a></li>
+					<li><a href="test1">1 - Búsqueda de usuarios</a></li>
+					<li><a href="test2">2 - Búsqueda de pedidos</a></li>
+					<li><a href="test3">3 - Información de clientes</a></li>
+					<li><a href="test4">4 - Búsqueda de pedidos</a></li>
+					<li><a href="test5">5 - Información de clientes</a></li>
+					<li><a href="test6">6 - Login JSON</a></li>
 					</ul>
 				</li>
 				</ul>

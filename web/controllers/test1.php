@@ -1,19 +1,16 @@
 <?php
 	function Test1()
 	{
-		Init();
-		global $Version;
 		$POST = $_SERVER['REQUEST_METHOD'] === 'POST';
 		
 		if ($POST)
 			Test1_POST();
 		else
-			include("views/test1.php");
+			Render("test1");
 	}
 
 	function Test1_POST()
 	{
-		global $Version;
 		$Result = array();
 		$UserCount = 0;
 		$POST = true;
@@ -52,13 +49,11 @@
 			}
 		}
 		
-		include("views/test1_post.php");
+		Render("test1_post", array("UserCount" => $UserCount, "Result" => $Result));
 	}
 
 	function Test1Res()
 	{
-		Init();
-		global $Version;
-		include("views/test1_res.php");
+		Render("test1_res");
 	}
 ?>

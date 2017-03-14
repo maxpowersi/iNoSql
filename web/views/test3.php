@@ -3,7 +3,7 @@
 <div class="container">
     <div class="page-header" style="padding-top: 20px;">
         <h1>Prueba 3 - Información de clientes</h1>
-        <h4>Ingresa en el formulario el número de cliente a buscar, por ejemplo 1. <a href="test3_res.php" target="_blank">Respuesta</a></h4>
+        <h4>Ingresa en el formulario el número de cliente a buscar, por ejemplo 1. <a href="test3_res" target="_blank">Respuesta</a></h4>
     </div>
     <div>	
         <form method="get">

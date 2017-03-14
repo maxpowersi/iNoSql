@@ -10,7 +10,7 @@
 		}			
 
 		var response = $.ajax({ type: "GET",   
-                        		url: "test5_server.php?acctid="+$("#acctidd").val(),   
+                        		url: "test5_server?acctid="+$("#acctidd").val(),   
                         		async: false
                               }).responseText;
 
@@ -29,7 +29,7 @@
 <div class="container">
     <div class="page-header" style="padding-top: 20px;">
         <h1>Prueba 5 - Información de clientes</h1>
-        <h4>Ingresa en el formulario el número de cliente, por ejemplo 1. <a href="test5_res.php" target="_blank">Respuesta</a></h4>
+        <h4>Ingresa en el formulario el número de cliente, por ejemplo 1. <a href="test5_res" target="_blank">Respuesta</a></h4>
     </div>
 	<div>
 		<form>

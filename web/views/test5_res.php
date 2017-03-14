@@ -12,7 +12,7 @@
 	<div class="container">
 <pre class="prettyprint linenums">
 var response = $.ajax({ type: "GET",   
-                        url: "ajax1_server.php?acctid="+$("#acctidd").val(),   
+                        url: "ajax1_server?acctid="+$("#acctidd").val(),   
                         async: false
                       }).responseText;
 </pre>

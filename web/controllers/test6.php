@@ -1,17 +1,11 @@
 <?php
     function Test6()
     {
-   		Init();
-		global $Version;
-
-        include("views/test6.php");
+        Render("test6");
     }
 
     function Test6Server()
     {
-        Init();
-		global $Version;
-        
         try 
         {
             $conn = new MongoClient();
@@ -41,10 +35,6 @@
 
     function Test6Res()
     {
-        Init();
-		global $Version;
-
-        include("views/test6_res.php");
+        Render("test6_res");
     }
-
 ?>

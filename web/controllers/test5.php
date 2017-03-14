@@ -1,8 +1,6 @@
 <?php
 	function Test5()
 	{
-		Init();
-		global $Version;
 		$Result = array();
 		$Count = 0;
 		$ShowLabel = false;
@@ -45,14 +43,11 @@
             }
         }
 
-		include("views/test5.php");
+		Render("test5", array("Count" => $Count, "Result" => $Result));
 	}
 
     function Test5Server()
     {
-        Init();
-		global $Version;
-
         try 
         {
             $conn = new MongoClient();
@@ -83,9 +78,6 @@
 
 	function Test5Res()
 	{
-		Init();
-		global $Version;
-
-		include("views/test5_res.php");
+		Render("test5_res");
 	}
 ?>

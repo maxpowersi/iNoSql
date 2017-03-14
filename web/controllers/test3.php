@@ -1,8 +1,6 @@
 <?php
 	function Test3()
 	{
-		Init();
-		global $Version;
 		$Result = array();
 		$Count = 0;
 		$ShowLabel = false;
@@ -45,14 +43,12 @@
 			}
 
 		}
-		include("views/test3.php");
+
+		Render("test3", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
 	}
 
 	function Test3Res()
 	{
-		Init();
-		global $Version;
-
-		include("views/test3_res.php");
+		Render("test3_res");
 	}
 ?>

@@ -1,8 +1,6 @@
 <?php
 	function Test4()
 	{
-		Init();
-		global $Version;
 		$Result = array();
 		$Count = 0;
 		$ShowLabel = false;
@@ -44,14 +42,12 @@
                 die('Error: ' . $e->getMessage());
             }
         }
-		include("views/test4.php");
+
+		Render("test4", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
 	}
 
 	function Test4Res()
 	{
-		Init();
-		global $Version;
-
-		include("views/test4_res.php");
+		Render("test4_res");
 	}
 ?>

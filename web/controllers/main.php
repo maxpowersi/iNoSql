@@ -1,62 +1,39 @@
 <?php
-	global $Version;
-	
-	function Init()
-	{
-		global $Version;	
-		$archivo = file("version.txt");		
-		foreach ($archivo as $line) 
-			$Version = $line;
-	}
-	
 	function NotFound()
 	{
-		Init();
-		global $Version;
-
-		include("views/not_found.php");
+		Render("not_found");
 	}
 
 	function Home()
 	{
-		Init();
-		global $Version;
-		
-		include("views/home.php");
+		Render("home");
 	}
 	
 	function Payloads()
 	{
-		Init();		
-		global $Version;
 		$Payloads = array();
-		
+
 		$archivo = file("controllers/payloads.txt");		
 		foreach ($archivo as $line) 
 		{
 			$Payloads[] = $line;
 		}
 		
-		include("views/payloads.php");
+		Render("payloads", array("Payloads" => $Payloads));
 	}
 
 	function Setup()
-	{
-		Init();		
-		global $Version;
+	{	
 		$POST = $_SERVER['REQUEST_METHOD'] === 'POST';
 		
 		if ($POST)
 			Setup_POST();
 		else
-			include("views/setup.php");
+			Render("setup");
 	}	
 
 	function Setup_POST()
 	{	
-		Init();
-		global $Version;
-
 		$conn = new MongoClient();	
 		$db = $conn->inosql;
 
@@ -83,7 +60,7 @@
 
 		$conn->close();
 
-		include("views/setup_post.php");
+		Render("setup_post");
 	}
 
 ?>
