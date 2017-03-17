@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/maxpowersi/iNoSql/master/res/img/icon.png)<br>/
+![alt tag](https://raw.githubusercontent.com/maxpowersi/iNoSql/master/res/img/icon.png)<br/>
 <br>
 # iNoSql v1.8
 <br/>
