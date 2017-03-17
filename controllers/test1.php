@@ -1,19 +1,13 @@
 <?php
 	function Test1()
 	{
-		$POST = $_SERVER['REQUEST_METHOD'] === 'POST';
-		
-		if ($POST)
-			Test1_POST();
-		else
-			Render("test1");
+		RenderWithView("test1");
 	}
 
 	function Test1_POST()
 	{
 		$Result = array();
 		$UserCount = 0;
-		$POST = true;
 		
 		if (isset($_POST['usersearch']) && !empty($_POST['usersearch'])) 
 		{
@@ -49,11 +43,11 @@
 			}
 		}
 		
-		Render("test1_post", array("UserCount" => $UserCount, "Result" => $Result));
+		RenderWithView("test1_post", array("UserCount" => $UserCount, "Result" => $Result));
 	}
 
 	function Test1Res()
 	{
-		Render("test1_res");
+		RenderWithView("test1_res");
 	}
 ?>

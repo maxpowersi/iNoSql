@@ -1,25 +1,24 @@
 <?php
     function Test6()
     {
-        Render("test6");
+        RenderWithView("test6");
     }
 
-    function Test6Server()
+    function Test6Server_POST()
     {
         try 
         {
             $conn = new MongoClient();
             $db = $conn->inosql;
             $collection = $db->users;	
-            $inputJSON = file_get_contents('php://input');
-            $input = json_decode($inputJSON, TRUE);		
+            $input = request_GetJson();		
             
             $cursor = $collection->find($input);
             
             if($cursor->count() == 0)
-                echo "Credenciales incorrectas.";
+                response_Write("Invalid username or password!");
             else
-                echo "Bienvenido!";
+                response_Write("Welcome!");
 
             $conn->close();
         }
@@ -35,6 +34,6 @@
 
     function Test6Res()
     {
-        Render("test6_res");
+        RenderWithView("test6_res");
     }
 ?>

@@ -1,0 +1,32 @@
+<div class="page-header" style="padding-top: 20px;">
+	<h1>Benchmark</h1>
+</div>
+<p class="lead">The next table shows the results of the tools used to scan the web application.</p>
+<div>
+	<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Challenge 1</th>
+		<th>Challenge 2</th>
+        <th>Challenge 3</th>
+        <th>Challenge 4</th>
+		<th>Challenge 5</th>
+        <th>Challenge 6</th>
+      </tr>
+    </thead>
+    <tbody>
+   	<?php foreach($Results as $item) { ?>
+		<tr>
+			<td><?php PrintOut($item["tool_name"]); ?></td>
+			<td><?php PrintOut($item["test1_result"]); ?></td>
+			<td><?php PrintOut($item["test2_result"]); ?></td>
+			<td><?php PrintOut($item["test3_result"]); ?></td>
+			<td><?php PrintOut($item["test4_result"]); ?></td>
+			<td><?php PrintOut($item["test5_result"]); ?></td>
+			<td><?php PrintOut($item["test6_result"]); ?></td>
+		</tr>
+	<?php }	?>
+    </tbody>
+  </table>
+</div>

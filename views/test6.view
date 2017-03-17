@@ -1,5 +1,3 @@
-<?php ob_start() ?>
-
 <script type="text/javascript">
     function enviar()
     {
@@ -19,23 +17,20 @@
 
 <div class="container">
     <div class="page-header" style="padding-top: 20px;">
-        <h1>Prueba 6 - Login JSON</h1>
-        <h4>Ingresa en el formulario las credenciales de autenticación, por ejemplo el nombre de usuario es admin. <a href="test6_res" target="_blank">Respuesta</a></h4>
+        <h1>Challenge 6 - Login JSON</h1>
+        <h4>Write in the form username and password, for example, for username you can use admin. <a href="test6_res" target="_blank">Answer</a></h4>
     </div>
     <div>	
         <form method="get">
 			<div class="form-group">
-				<label>Nombre de usuario</label>
+				<label>Username</label>
 				<input type='text' name='user' id='user' class='form-control' style='width: 30%;' />
 			</div>
             <div class="form-group">
-				<label>Contraseña</label>
+				<label>Password</label>
 				<input type='password' name='pass' id='pass' class='form-control' style='width: 30%;' />
 			</div>			
 			<button type="button" class="btn btn-default" onclick="enviar();">Enviar</button>
         </form>
     </div>
 </div>
-
-<?php $Content = ob_get_clean() ?>
-<?php include "main_view.php" ?>

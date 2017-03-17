@@ -17,7 +17,7 @@
                 $js = "function () { var query = '". $search . "'; return this.id == query;}";
                 $cursor = $collection->find(array('$where' => $js));
 
-               $Count = $cursor->count();
+                $Count = $cursor->count();
 
                 foreach ($cursor as $obj) 
                 {
@@ -43,7 +43,7 @@
             }
         }
 
-		Render("test5", array("Count" => $Count, "Result" => $Result));
+		RenderWithView("test5", array("Count" => $Count, "Result" => $Result));
 	}
 
     function Test5Server()
@@ -57,11 +57,11 @@
             $cursor = $collection->find(array('id' => $search));
             
             if($cursor->count() == 0)
-                echo "";
+                response_Write("");
 
             foreach ($cursor as $obj) 
             {
-                echo $obj['cc'];
+                response_Write($obj['cc']);
             }
             
             $conn->close();
@@ -78,6 +78,6 @@
 
 	function Test5Res()
 	{
-		Render("test5_res");
+		RenderWithView("test5_res");
 	}
 ?>

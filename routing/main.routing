@@ -13,5 +13,6 @@ test6:Test6
 test6_server:Test6Server
 test6_res:Test6Res
 payloads:Payloads
-setup:Setup
+config:Setup
 home:Home
+benchmark:Benchmark

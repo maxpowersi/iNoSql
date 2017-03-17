@@ -1,19 +1,19 @@
-<?php ob_start() ?>
-
 <div class="container">
     <div class="page-header" style="padding-top: 20px;">
-        <h1>Prueba 6 - Login JSON - Explicación </h1>
+        <h1>Challenge 6 - Login JSON - Answer</h1>
     </div>
     <div>
-        <p class="lead">La consulta básica de auntenticación SQL suele ser SELECT * FROM accounts WHERE username = 'admin' AND password = '123456'</p>
-        <p class="lead">Ante esta consulta podemos inyectar en el campo password el valor "admin' --" y de esta forma logramos la consulta:</p>
-        <p class="lead">SELECT * FROM accounts WHERE username = 'admin' -- AND password = '' la cual devuelve un conjunto de datos, si el usuario es existente.</p>
-        <p class="lead">Para las bases de datos No SQL, podemos transformar la inyección en {$gt: ""} con lo que nos quedaria la consulta en </p> <p class="lead">{"username": "admin", "password": {"$gt": ""}}</p> lo cual devuelve un conjunto de datos, para un usuario existente, y cuyo password sea mayor en longitud al caracter vacío.</p>
-        <p class="lead">Una alternativa a la inyección seria usar esta otra {"$ne": null} en donde buscamos distinto de nulo.</p>
-        <p class="lead">El siguiente fragmento de código muestra como se realiza la consulta a la base de datos de mongodb. La linea 6 muestra como el párametro es directamente concatenado en la consulta.</p>	
+        <p class="lead">In Sql, the tipycal query is SELECT * FROM accounts WHERE username = 'admin' AND password = '123456'</p>
+        <p class="lead">We can inject in the password field "admin' --" in otder to build the nex query:</p>
+        <p class="lead">SELECT * FROM accounts WHERE username = 'admin' -- AND password = ''</p>
+        <p class="lead">That query, return data if an user with the given password and username exist.</p>
+        <p class="lead">For no sql, we can convert the payload into {$gt: ""} in order to build the next query:</p>
+        <p class="lead">{"username": "admin", "password": {"$gt": ""}}</p>
+        <p class="lead">This query return data, if an admin user exists, and he has got a password with a lenght greather than zero.</p>
+        <p class="lead">We can change the payload, and use this {"$ne": null} where we search for distint of null, with the same purpose.</p>
+        <p class="lead">The next fragment of source code shows how the quey was building.</p>
     </div>
 </div>
-
 <div class="container">
     <pre class="prettyprint linenums">
         $conn = new MongoClient('mongodb://localhost');
@@ -24,6 +24,3 @@
         $cursor = $collection->find($input);
     </pre>
 </div>
-
-<?php $Content = ob_get_clean() ?> 
-<?php include "main_view.php" ?>

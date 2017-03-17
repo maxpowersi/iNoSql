@@ -44,11 +44,11 @@
 
 		}
 
-		Render("test3", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
+		RenderWithView("test3", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
 	}
 
 	function Test3Res()
 	{
-		Render("test3_res");
+		RenderWithView("test3_res");
 	}
 ?>

@@ -43,11 +43,11 @@
             }
         }
 
-		Render("test4", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
+		RenderWithView("test4", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
 	}
 
 	function Test4Res()
 	{
-		Render("test4_res");
+		RenderWithView("test4_res");
 	}
 ?>
