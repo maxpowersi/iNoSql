@@ -3,9 +3,10 @@
 			<h1>Challenge 4 - Orders search - Answer</h1>
 		</div>
 		<div>
-			<p class="lead">In the first challenge we use the tipycal payload and we converted it into JavaScript syntax. In this challenge, we have more complexity, the query has the parameter in the middle.</p>
+			<p class="lead">In the first challenge we use the tipycal payload and we converted it into JavaScript syntax. In this challenge, we have more complexity, the query has the parameter in the middle. Furthermore, we do not have error sent to the user.</p>
 			<p class="lead">The payload to use is user'; CODIGO; }//</p>
-			<p class="lead">In the challenge 2, we learn how to get all items from the collection. In this, we are going to learn how to make a DOS attack. The payload to use is user'; while(1); }//</p>
+			<p class="lead">In the challenge 2, we had erros, and we got all items from the collection. In this example, we are going to learn how to detect a possible injection, without errors sent to the users. The payload to use is user'; sleep(2000); }//</p>
+			<p class="lead">We use the MondoDB sleep function to detect if it is possible inject code. If we get a big pause, nearly to the injected miliseconds, we can inject code!. For example we can make a DOS attack, using while(1), or we can insert or delete data (not ever).</p>
 			<p class="lead">The next fragment of source code shows how the quey was building.</p>
 		</div>
     </div>

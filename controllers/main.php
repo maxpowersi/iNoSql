@@ -61,4 +61,10 @@
 		RenderWithView("benchmark", array("Results" => $results));
 	}
 
+	function Benchmark_POST()
+	{
+		file_SaveInData("file", "tool_results.csv");
+		$results = file_ReadFromDataCsv("tool_results.csv", ",", true);
+		RenderWithView("benchmark_post", array("Results" => $results));
+	}
 ?>

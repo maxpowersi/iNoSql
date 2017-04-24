@@ -1,6 +1,8 @@
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 <div class="page-header" style="padding-top: 20px;">
 	<h1>Benchmark</h1>
 </div>
+<p class="lead">The results was uploaded.</p>
 <p class="lead">The next table shows the results of the tools used to scan the web application.</p>
 <div>
 	<table class="table table-striped">

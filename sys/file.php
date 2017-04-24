@@ -12,6 +12,18 @@
         return $list;
     }
 
+    //Save a file in data folder, return true or false
+    function file_SaveInData($fileNameInput, $newName)
+    {
+        if($_FILES[$fileNameInput]["name"] && !$_FILES[$fileNameInput]['error'])
+        {
+            move_uploaded_file($_FILES[$fileNameInput]['tmp_name'], 'data/'. $newName);
+            return true;
+        }
+        else
+            return false;
+    }
+
     //Return an array key, value from a CSV file in data folder
     function file_ReadFromDataCsv($nameFile, $delimiter, $firstLineIsHeader = false)
     {

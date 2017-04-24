@@ -32,6 +32,8 @@
                 }
 
                 $conn->close();
+
+                RenderWithView("test4", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
             } 
             catch (MongoConnectionException $e) 
             {
@@ -39,11 +41,11 @@
             } 
             catch (MongoException $e) 
             {
-                die('Error: ' . $e->getMessage());
+                RenderWithView("test4", array("Count" => 0, "Result" => array(), "ShowLabel" => true));
             }
         }
-
-		RenderWithView("test4", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
+        else
+            RenderWithView("test4", array("Count" => $Count, "Result" => $Result, "ShowLabel" => $ShowLabel));
 	}
 
 	function Test4Res()
