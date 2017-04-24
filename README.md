@@ -28,11 +28,11 @@ Setup process: <br/>
         sudo service apache2 restart<br/>
 4. Run MongoDB<br/>
     Windows:<br/>
-		Create the folder "C:\data\db"
+		Create the folder "C:\data\db"t<br/>
         Run the script mongodb-start.bat inside "setup" folder<br/>
         Also, if a mongo shell is required run the script ongodb-getshell.bat in the same folder<br/>
     Linux:<br/>
         service mongodb start<br/>
-        To get a shell run mongodb.
-5. Copiar la carpeta web en el directorio de apache, y configurar el virtual host, con pagina inicial "/home".<br/>
+        To get a shell run mongodb.t<br/>
+5. Copy the  web folder into the apache folder. Setup the virtual host file, with init page "home".<br/>
 6. Go to the application, and go to the "Setup" page, then click the button "Install".<br/>
