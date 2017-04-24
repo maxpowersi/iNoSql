@@ -1,6 +1,6 @@
 ![alt tag](https://raw.githubusercontent.com/maxpowersi/iNoSql/master/res/img/icon.png)<br/>
 <br>
-# iNoSql v1.8
+# iNoSql v1.9
 <br/>
 iNoSQL is a web application with no sql injection vulnerability. It was developed with the purpose of learn about no sql injections, how to exploit and avoid them. Also, the application can be used to test modern web application tools in order to know if the tool can be use to detect this type of vulnerability. It is distributed under the GNU GPLv3 license.<br/>
 Setup process: <br/>
