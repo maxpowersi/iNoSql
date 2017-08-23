@@ -13,7 +13,7 @@ Setup process: <br/>
         install XAMPP<br/>
     Linux:<br >
         sudo apt-get install apache2<br/>
-        sudo apt-get install php7.0<br/>
+        sudo apt-get install php5.0<br/>
 3. Setup the driver<br/>
     Windows:<br/>
         Copy the file php_mongo.dll inside the folder "setup", into the folder php/ext<br/>
