@@ -28,7 +28,7 @@ Setup process: <br/>
         sudo service apache2 restart<br/>
 4. Run MongoDB<br/>
     Windows:<br/>
-		Create the folder "C:\data\db"t<br/>
+	Create the folder "C:\data\db"<br/>
         Run the script mongodb-start.bat inside "setup" folder<br/>
         Also, if a mongo shell is required run the script ongodb-getshell.bat in the same folder<br/>
     Linux:<br/>
