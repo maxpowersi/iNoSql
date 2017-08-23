@@ -13,7 +13,7 @@ Setup process: <br/>
         install XAMPP<br/>
     Linux:<br >
         sudo apt-get install apache2<br/>
-        sudo apt-get install php5.0<br/>
+        sudo apt-get install php5<br/>
 3. Setup the driver<br/>
     Windows:<br/>
         Copy the file php_mongo.dll inside the folder "setup", into the folder php/ext<br/>
@@ -33,6 +33,6 @@ Setup process: <br/>
         Also, if a mongo shell is required run the script ongodb-getshell.bat in the same folder<br/>
     Linux:<br/>
         service mongodb start<br/>
-        To get a shell run mongodb.t<br/>
+        To get a shell run mongo<br/>
 5. Copy the  web folder into the apache folder. Setup the virtual host file, with init page "home".<br/>
 6. Go to the application, and go to the "Setup" page, then click the button "Install".<br/>
