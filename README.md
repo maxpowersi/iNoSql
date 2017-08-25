@@ -55,13 +55,13 @@ service apache2 restart
 ### 6. Run MongoDB
 Windows:
 ```
-Create the folder "C:\data\db"<br/>
-Run the script mongodb-start.bat inside "setup" folder<br/>
+Create the folder "C:\data\db"
+Run the script mongodb-start.bat inside "setup" folder
 Also, if a mongo shell is required run the script ongodb-getshell.bat in the same folder
 ```
 Linux:
 ```
-service mongodb start<
+service mongodb start
 To get a shell run mongo
 ```
 ### 7. Clone the repository into the virtual host directory, 
@@ -70,7 +70,8 @@ For example:
 /var/www/html
 C:/xampp/httpdocs
 ```
-### 8. Go to the application (using the URL http://localhost/iNoSql/home) and go to the "Setup" page, then click the button "Install".
+### 8. Go to the application
+Using the URL http://localhost/iNoSql/home and go to the "Setup" page, then click the button "Install".
 ## Virtual machine
 If you do not want to intall the application, you can download the virtual machine (ubuntu server) from google drive.
 ```
