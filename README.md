@@ -80,3 +80,6 @@ User: inosql
 Password: inosql
 ```
 ##### [Download](http://inosqlvm.maxpowersi.com.ar)
+##iNoSql OWASP Argentina 2017
+You can download the spanish presentation from OWASP Argentina 2017, where iNoSql was showed.
+##### [Download](https://drive.google.com/file/d/0B4pgtVI19PJibzF0VmRzNFkxdGc)
