@@ -5,7 +5,7 @@ iNoSQL is a web application with no sql injection vulnerability. It was develope
 ### 1. Install MongoDB
 Windows:
 ```
-X
+Install from www.mongodb.com
 ```
 Linux:
 ```
