@@ -1,7 +1,7 @@
 ![alt tag](https://raw.githubusercontent.com/maxpowersi/iNoSql/master/res/img/icon.png)
 # iNoSql v1.10
 iNoSQL is a web application with no sql injection vulnerability. It was developed with the purpose of learn about no sql injections, how to exploit and avoid them. Also, the application can be used to test modern web application tools in order to know if the tool can be use to detect this type of vulnerability. It is distributed under the GNU GPLv3 license.
-## Setup process:
+## Setup process
 ### 1. Install MongoDB
 Windows:
 ```
@@ -42,7 +42,8 @@ sudo service apache2 restart
 a2enmod rewrite
 service apache2 restart
 ```
-### 5. Setup the virtual host file (remeber configure "AllowOverride All"):
+### 5. Setup the virtual host file
+Remeber configure "AllowOverride All"
 ```
 <VirtualHost *:80>
 <Directory /var/www/html>
@@ -64,7 +65,7 @@ Linux:
 service mongodb start
 To get a shell run mongo
 ```
-### 7. Clone the repository into the virtual host directory, 
+### 7. Clone the repository into the virtual host directory
 For example:
 ```
 /var/www/html
