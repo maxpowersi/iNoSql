@@ -9,7 +9,7 @@
         try 
         {
             $conn = new MongoClient();
-            $db = $conn->nosqli;
+            $db = $conn->inosql;
             $collection = $db->paymentinfo;
             $search = $_GET['acctid'];				
             $cursor = $collection->find(array('id' => $search));
