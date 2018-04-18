@@ -3,7 +3,7 @@
     {
             var response = $.ajax({
                                     type: "POST",
-                                    url: "/inosql/web/test6_server",
+                                    url: "/iNoSql/web/test6_server",
                                     data: JSON.stringify({username:$("#user").val(), password: $("#pass").val()}),
                                     contentType: "application/json",
                                     dataType: "json",
