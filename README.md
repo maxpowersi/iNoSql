@@ -75,6 +75,7 @@ C:/xampp/httpdocs
 Using the URL http://localhost/iNoSql/home and go to the "Setup" page, then click the button "Install".
 ## Virtual machine
 If you do not want to intall the application, you can download the virtual machine (ubuntu server) from google drive.
+Note: Please, the virtual machine is not updated with the leatest version of iNoSql, please update it, using git clone from the repository.
 ```
 User: inosql
 Password: inosql
